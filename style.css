@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+	body{
+		background-color: #08061a;
+		background-image:url(images/static-bg.png);
+		background-repeat: repeat;
+		font-family: "Electrolize", system-ui;
+		margin:0;
+}
+
+/*Font Awesome*/
+.fa{
+	color: #AB5DDE;
+	font-size: 4em;
+}
+footer .fa{
+	font-size: 1em;
+}
+
+/* Header  */
+header{
+   	text-align: center;
+   	padding: 10px;
+   	background: #0C0D34;
+}
+header h1{
+   	line-height: 200%;
+   	margin:0;
+   	color: #FFFFFF;
+   	font-family: "Audiowide", sans-serif;
+}
+
+header img{
+	float: left;
+	margin-left: 20px;
+}
+
+/* Website Links except the nav */
+a:link{
+	color: #AB5DDE;
+
+}
+a:visited{
+	color: #6BF9BC;
+
+}
+a:hover{
+	color: #FF00E5;
+
+}
+a:active{
+	color: white;
+
+}
+
+
+/* Main */
+main{
+	max-width: 1000px;
+	margin:20px auto;
+	padding:10px;
+
+}
+
+/* Fonts */
+h1,h2,h3{
+   	font-family: "Audiowide", sans-serif;
+   	color: #6BF9BC ;
+  }
+p{
+   	font-family: "Electrolize", system-ui;
+   	color: #6BF9BC;
+  }
+h1{
+   	color: #AB5DDE;
+}
+h2{
+   	color: #5D36C7;
+}
+h3{
+   	color: #FF00E5;
+   	font-family: "Audiowide", sans-serif;
+}
+hr{
+   	color: white;
+}
+ul{
+	color: #DAAAFA;
+	font-family: "Audiowide", sans-serif;
+}
+small{
+	color: white;
+}
+
+/* Navigation */
+nav{
+	background-color: #161855 ;
+	border-top: 3px solid #0C0D34;
+	border-bottom: 3px solid #0C0D34;
+	border-right: 3px solid #0C0D34;
+	border-left: 3px solid #0C0D34;
+	padding: 5px;
+}
+
+nav a{
+   	text-decoration: none
+}
+
+nav ul{
+      list-style-type: none;
+      text-align: right;
+      margin: 8px 0;
+      padding-top: 5px;
+      padding-right: 25px;
+      padding: 45px;
+}
+
+nav li{
+      display: inline;
+      padding: 10px;   
+}
+
+nav a:link{
+       color:#AB5DDE	;  
+}
+
+nav a:visited{
+       color:#6BF9BC;  
+}
+
+nav a:hover{
+       color:#FF00E5; 
+}
+
+nav a:active{
+       color:white;  
+}
+
+/*Home*/
+.home-hero{
+   	background-image: url(images/color-swirl.jpg);
+   	background-size: cover;
+}
+.home-hero h1{
+	color: white;
+	text-shadow: 3px 3px 3px darkblue;
+   	font-family: "Audiowide", sans-serif;
+   	font-size:60px;
+   	text-shadow: 2px 2px 2px 2px black;
+   	text-align: center;
+   	padding: 50px 0;
+   	margin: 0;
+}
+.home-photo{
+ 	float: right;
+   	height: auto;
+   	margin: 50px 0 10px 20px;
+}
+.hero-image{
+   	background-image: url(images/gallery-hero.png);
+   	background-size: cover;
+   	height: 200px;
+   	max-width: 100%;
+
+
+}
+.hero-image h1{
+	color: darkblue;
+	text-shadow: 3px 3px  white;
+   	font-family: "Audiowide", sans-serif;
+   	font-size:50px;
+   	text-shadow: 2px 2px 2px 2px black;
+   	text-align: center;
+   	padding: 50px 0;
+}
+.img-fluid{
+	max-width: 100%;
+}
+
+/*Flappy Goose*/
+.myButton{
+	margin: 0 auto ;
+	display: block;
+	color: #161855;
+	background-color: #AB5DDE;
+}
+/* JavaScript Game changes for mobile */
+.mobile{
+	display:none;
+}
+@media only screen and (max-width: 768px){
+.desktop{
+		display:none;
+}
+.mobile{
+	display: block;
+	touch-action: manipulation;
+	}
+}
+
+/* Gallery  */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Gallery Column */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+ 
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Footer */
+footer{
+	border-top: #161855 3px solid;
+	text-align: left;
+	clear:both;
+	background-color: #0C0D34
+}
+
+/*CSS without a media query--applies to all sizes unless overridden*/h1{
+		font-size: 4em;
+	}
+
+/* CSS Adjustments for Tablets */
+	@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+	}
+}
+
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 1.5em;
+	}
+}
